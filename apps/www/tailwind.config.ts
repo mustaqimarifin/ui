@@ -1,7 +1,6 @@
-const baseConfig = require("../../tailwind.config.cjs")
+import baseConfig from "../../tailwind.config.js"
 
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+export const config = {
   ...baseConfig,
   content: [
     ...baseConfig.content,
@@ -9,3 +8,5 @@ module.exports = {
     "registry/**/*.{ts,tsx}",
   ],
 }
+
+export default config

@@ -16,7 +16,7 @@ const nextConfig = {
       },
     ],
   },
-  redirects() {
+  async redirects() {
     return [
       {
         source: "/components",
